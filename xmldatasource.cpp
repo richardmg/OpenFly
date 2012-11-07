@@ -99,11 +99,20 @@ void XmlDataSource::dataReceived()
 void XmlDataSource::executeQuery()
 {
     m_waiting = true;
-    QList<QPair<QString, QString> > query;
     const QList<QString> keys = m_queryItems.keys();
+
+#if QT_VERSION >= 0x050000
+    QUrlQuery query;
+    foreach (QString key, keys)
+        query.addQueryItem(key, m_queryItems.value(key));
+    m_url.setQuery(query);
+#else
+    QList<QPair<QString, QString> > query;
     foreach (QString key, keys)
         query.append(QPair<QString,QString>(key, m_queryItems.value(key)));
     m_url.setQueryItems(query);
+#endif
+
     m_receiver->request(m_url);
 }
 

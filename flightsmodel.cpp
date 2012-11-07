@@ -37,6 +37,37 @@ FlightsModel::FlightsModel(Settings *settings,
       m_statuses(statuses),
       m_times(times)
 {
+    m_times->setAirportCode(m_settings->airportCode());
+    QObject::connect(m_times, SIGNAL(dataUpdated(Node*)), this, SLOT(updateContents(Node*)));
+    QObject::connect(m_times, SIGNAL(airportCodeChanged()), this, SIGNAL(airportCodeChanged()));
+    QObject::connect(m_settings, SIGNAL(airportCodeChanged()), this, SLOT(reloadContents()));
+
+#if QT_VERSION < 0x050000
+    setRoleNames(roleNames()); // roleNames is virtal in Qt 5 but not in Qt 4.
+#endif
+}
+
+FlightsModel::~FlightsModel()
+{
+}
+
+int FlightsModel::rowCount(const QModelIndex &parent) const
+{
+    return parent.isValid() ? 0 : m_flights.count();
+}
+
+bool FlightsModel::isLoading() const
+{
+    return m_flights.isEmpty();// && m_times && m_times->isWaiting();
+}
+
+QString FlightsModel::airportCode() const
+{
+    return m_times ? m_times->airportCode() : QString();
+}
+
+QHash<int, QByteArray> FlightsModel::roleNames () const
+{
     QHash<int,QByteArray> names;
     names.insert(0, "uniqueID");
     names.insert(1, "airline");
@@ -57,31 +88,7 @@ FlightsModel::FlightsModel(Settings *settings,
     names.insert(16, "beltNumber");
     names.insert(17, "roundtrip");
     names.insert(18, "scheduleText");
-    setRoleNames(names);
-
-    m_times->setAirportCode(m_settings->airportCode());
-    QObject::connect(m_times, SIGNAL(dataUpdated(Node*)), this, SLOT(updateContents(Node*)));
-    QObject::connect(m_times, SIGNAL(airportCodeChanged()), this, SIGNAL(airportCodeChanged()));
-    QObject::connect(m_settings, SIGNAL(airportCodeChanged()), this, SLOT(reloadContents()));
-}
-
-FlightsModel::~FlightsModel()
-{
-}
-
-int FlightsModel::rowCount(const QModelIndex &parent) const
-{
-    return parent.isValid() ? 0 : m_flights.count();
-}
-
-bool FlightsModel::isLoading() const
-{
-    return m_flights.isEmpty();// && m_times && m_times->isWaiting();
-}
-
-QString FlightsModel::airportCode() const
-{
-    return m_times ? m_times->airportCode() : QString();
+    return names;
 }
 
 QVariant FlightsModel::data(const QModelIndex &index, int role) const

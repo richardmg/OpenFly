@@ -23,9 +23,17 @@
 
 #include <QApplication>
 #include <QDesktopWidget>
+
+#if QT_VERSION >= 0x050000
+#include <QtQuick1/QDeclarativeView>
+#include <QtQuick1/QDeclarativeEngine>
+#include <QtQuick1/QDeclarativeContext>
+#else
 #include <QtDeclarative/QDeclarativeView>
 #include <QtDeclarative/QDeclarativeEngine>
 #include <QtDeclarative/QDeclarativeContext>
+#endif
+
 #include <qplatformdefs.h>
 
 #include "settings.h"

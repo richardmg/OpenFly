@@ -51,6 +51,8 @@ public:
     bool isLoading() const;
     QString airportCode() const;
 
+    QHash<int, QByteArray> roleNames () const;
+
 Q_SIGNALS:
     void loadingChanged();
     void airportCodeChanged();
