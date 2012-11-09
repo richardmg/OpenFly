@@ -38,12 +38,7 @@ RESOURCES += \
 TRANSLATIONS += \
 
 QT += network
-
-greaterThan(QT_MAJOR_VERSION, 4) {
-    QT += quick1
-} else {
-    QT += declarative
-}
+QT += declarative
 
 symbian {
     TARGET.UID3 = 0xe36f34d8
