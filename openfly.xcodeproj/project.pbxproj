@@ -8,10 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		25CFE02D0BC3E9DD39D909FB /* CoreGraphics.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 4766F0815A45C66CB97F791F /* CoreGraphics.framework */; };
-		337DE48237221E0BFE35EAB6 /* QtSql_debug in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 170D1D0104F57965EF5FDE0B /* QtSql_debug */; };
-		3B1F5974F6B2BBDCD4193B96 /* QtWidgets_debug in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 350A58B0753854606FDB524F /* QtWidgets_debug */; };
 		404FE74F9D53816A4C747D53 /* moc_flightsmodel.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 23507EC91B85084C3776D04A /* moc_flightsmodel.cpp */; settings = {ATTRIBUTES = (); }; };
-		44132618EB174D7C6CCBD22E /* QtScript_debug in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 949F85CE62A901B2CB1F614A /* QtScript_debug */; };
 		47FDDC94D3091913D73BB111 /* moc_flighttimes.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = DE784BD8FE71D2661E0CC55C /* moc_flighttimes.cpp */; settings = {ATTRIBUTES = (); }; };
 		4B4BF05C0FEFD0F4606EB533 /* flighttimes.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7A14D225C69E47BECD3792D5 /* flighttimes.cpp */; settings = {ATTRIBUTES = (); }; };
 		655638DFF55AE894AD187CA7 /* moc_airportnames.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = A9FE6B2A54DBE592CBC3603F /* moc_airportnames.cpp */; settings = {ATTRIBUTES = (); }; };
@@ -23,16 +20,19 @@
 		797C625B164EA3010004624F /* Foundation.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 797C625A164EA3010004624F /* Foundation.framework */; };
 		797C625D164EA9D20004624F /* libQtPlatformSupport.a in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 797C625C164EA9D20004624F /* libQtPlatformSupport.a */; };
 		797C625F164EB5380004624F /* Default-568h@2x.png in Bundle Resources */ = {isa = PBXBuildFile; fileRef = 797C625E164EB5380004624F /* Default-568h@2x.png */; };
+		79AB5FFB1655001500F87E48 /* libQt5Core.a in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 79AB5FF61655001500F87E48 /* libQt5Core.a */; };
+		79AB5FFC1655001500F87E48 /* libQt5Declarative.a in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 79AB5FF71655001500F87E48 /* libQt5Declarative.a */; };
+		79AB5FFD1655001500F87E48 /* libQt5Gui.a in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 79AB5FF81655001500F87E48 /* libQt5Gui.a */; };
+		79AB5FFE1655001500F87E48 /* libQt5Script.a in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 79AB5FF91655001500F87E48 /* libQt5Script.a */; };
+		79AB5FFF1655001500F87E48 /* libQt5Widgets.a in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 79AB5FFA1655001500F87E48 /* libQt5Widgets.a */; };
+		79AB60021655003A00F87E48 /* libQt5Network.a in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 79AB60001655003A00F87E48 /* libQt5Network.a */; };
+		79AB60031655003A00F87E48 /* libQt5Sql.a in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 79AB60011655003A00F87E48 /* libQt5Sql.a */; };
 		79CA699216501CB50030CF97 /* libqiosmain.a in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 79CA699116501CB50030CF97 /* libqiosmain.a */; };
 		79CA699C16516B7C0030CF97 /* Info.plist in Bundle Resources */ = {isa = PBXBuildFile; fileRef = 79CA699B16516B7C0030CF97 /* Info.plist */; };
-		7CB330EA83AF1C6A1980F7F3 /* QtGui_debug in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 32EFFA4A94AD4DA7F8E33446 /* QtGui_debug */; };
 		8FE57FB4F2258217F5D940F9 /* flightstatuses.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7B1E15103925972CC6E19A15 /* flightstatuses.cpp */; settings = {ATTRIBUTES = (); }; };
-		90204DE536067AAD078A90DC /* QtCore_debug in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = DDA3DF2B266BFFAB636B9B3E /* QtCore_debug */; };
-		966CD00126B932EB54E737D1 /* QtDeclarative_debug in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = AF251D0D4E742A6489E32C68 /* QtDeclarative_debug */; };
 		9CB0A8ECEB71BB2030D34769 /* moc_settings.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 185FBC6310E35CB6C4F8D35F /* moc_settings.cpp */; settings = {ATTRIBUTES = (); }; };
 		ACB9E77C9C95049A1A9CE9A6 /* airportnames.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = B37F66EFA33B442F85DBD3A1 /* airportnames.cpp */; settings = {ATTRIBUTES = (); }; };
 		B18E935B3D7E9A845363D933 /* receiver.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C56FAC0AC77B5BE8B343CD2F /* receiver.cpp */; settings = {ATTRIBUTES = (); }; };
-		B3BA92F700CBA4597A8D256A /* QtNetwork_debug in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 748704BE8BF9062915540423 /* QtNetwork_debug */; };
 		BF08F8A7D5386715807095B8 /* QuartzCore.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = ACA2ADFDECDBEA62C468C945 /* QuartzCore.framework */; };
 		CBD2187AD53790107C23760E /* flightsmodel.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 6BEE7AF3F9B8F9131DD6267E /* flightsmodel.cpp */; settings = {ATTRIBUTES = (); }; };
 		DD77281E5EBC9C879D2E78B8 /* settings.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 9393585829C5CF7660B96A11 /* settings.cpp */; settings = {ATTRIBUTES = (); }; };
@@ -70,6 +70,13 @@
 		797C625A164EA3010004624F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		797C625C164EA9D20004624F /* libQtPlatformSupport.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQtPlatformSupport.a; path = "Volumes/Code/qt-shadowbuilds/qt-base-ios-device/lib/libQtPlatformSupport.a"; sourceTree = "<group>"; };
 		797C625E164EB5380004624F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		79AB5FF61655001500F87E48 /* libQt5Core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQt5Core.a; path = "Volumes/Code/qt-shadowbuilds/qt-base-ios-device/lib/libQt5Core.a"; sourceTree = "<group>"; };
+		79AB5FF71655001500F87E48 /* libQt5Declarative.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQt5Declarative.a; path = "Volumes/Code/qt-shadowbuilds/qt-base-ios-device/lib/libQt5Declarative.a"; sourceTree = "<group>"; };
+		79AB5FF81655001500F87E48 /* libQt5Gui.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQt5Gui.a; path = "Volumes/Code/qt-shadowbuilds/qt-base-ios-device/lib/libQt5Gui.a"; sourceTree = "<group>"; };
+		79AB5FF91655001500F87E48 /* libQt5Script.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQt5Script.a; path = "Volumes/Code/qt-shadowbuilds/qt-base-ios-device/lib/libQt5Script.a"; sourceTree = "<group>"; };
+		79AB5FFA1655001500F87E48 /* libQt5Widgets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQt5Widgets.a; path = "Volumes/Code/qt-shadowbuilds/qt-base-ios-device/lib/libQt5Widgets.a"; sourceTree = "<group>"; };
+		79AB60001655003A00F87E48 /* libQt5Network.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQt5Network.a; path = "Volumes/Code/qt-shadowbuilds/qt-base-ios-device/lib/libQt5Network.a"; sourceTree = "<group>"; };
+		79AB60011655003A00F87E48 /* libQt5Sql.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQt5Sql.a; path = "Volumes/Code/qt-shadowbuilds/qt-base-ios-device/lib/libQt5Sql.a"; sourceTree = "<group>"; };
 		79CA699116501CB50030CF97 /* libqiosmain.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libqiosmain.a; path = "Volumes/Code/qt-shadowbuilds/qt-base-ios-device/plugins/platforms/libqiosmain.a"; sourceTree = "<group>"; };
 		79CA699B16516B7C0030CF97 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		7A14D225C69E47BECD3792D5 /* flighttimes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = flighttimes.cpp; sourceTree = SOURCE_ROOT; };
@@ -101,6 +108,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79AB60021655003A00F87E48 /* libQt5Network.a in Frameworks & Libraries */,
+				79AB60031655003A00F87E48 /* libQt5Sql.a in Frameworks & Libraries */,
+				79AB5FFB1655001500F87E48 /* libQt5Core.a in Frameworks & Libraries */,
+				79AB5FFC1655001500F87E48 /* libQt5Declarative.a in Frameworks & Libraries */,
+				79AB5FFD1655001500F87E48 /* libQt5Gui.a in Frameworks & Libraries */,
+				79AB5FFE1655001500F87E48 /* libQt5Script.a in Frameworks & Libraries */,
+				79AB5FFF1655001500F87E48 /* libQt5Widgets.a in Frameworks & Libraries */,
 				797C6259164EA2EE0004624F /* libqios.a in Frameworks & Libraries */,
 				79CA699216501CB50030CF97 /* libqiosmain.a in Frameworks & Libraries */,
 				797C625D164EA9D20004624F /* libQtPlatformSupport.a in Frameworks & Libraries */,
@@ -110,13 +124,6 @@
 				BF08F8A7D5386715807095B8 /* QuartzCore.framework in Frameworks & Libraries */,
 				FB4C557F6B609103986F96CE /* CoreText.framework in Frameworks & Libraries */,
 				25CFE02D0BC3E9DD39D909FB /* CoreGraphics.framework in Frameworks & Libraries */,
-				966CD00126B932EB54E737D1 /* QtDeclarative_debug in Frameworks & Libraries */,
-				337DE48237221E0BFE35EAB6 /* QtSql_debug in Frameworks & Libraries */,
-				3B1F5974F6B2BBDCD4193B96 /* QtWidgets_debug in Frameworks & Libraries */,
-				44132618EB174D7C6CCBD22E /* QtScript_debug in Frameworks & Libraries */,
-				B3BA92F700CBA4597A8D256A /* QtNetwork_debug in Frameworks & Libraries */,
-				7CB330EA83AF1C6A1980F7F3 /* QtGui_debug in Frameworks & Libraries */,
-				90204DE536067AAD078A90DC /* QtCore_debug in Frameworks & Libraries */,
 			);
 			name = "Frameworks & Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,6 +134,13 @@
 		05596AB53D8D521C69802C27 /* openfly */ = {
 			isa = PBXGroup;
 			children = (
+				79AB60001655003A00F87E48 /* libQt5Network.a */,
+				79AB60011655003A00F87E48 /* libQt5Sql.a */,
+				79AB5FF61655001500F87E48 /* libQt5Core.a */,
+				79AB5FF71655001500F87E48 /* libQt5Declarative.a */,
+				79AB5FF81655001500F87E48 /* libQt5Gui.a */,
+				79AB5FF91655001500F87E48 /* libQt5Script.a */,
+				79AB5FFA1655001500F87E48 /* libQt5Widgets.a */,
 				79CA699B16516B7C0030CF97 /* Info.plist */,
 				79CA699116501CB50030CF97 /* libqiosmain.a */,
 				797C625E164EB5380004624F /* Default-568h@2x.png */,
@@ -457,6 +471,7 @@
 		8C7174830A1E4DCBA0332EC1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Richard Gustavsen (6946YJH46R)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -466,12 +481,14 @@
 					"\"$(SRCROOT)/../../qt-shadowbuilds/qt-base-ios-device/lib\"",
 				);
 				PRODUCT_NAME = openfly;
+				PROVISIONING_PROFILE = "3E750376-8691-4283-A06D-21ACB6319884";
 			};
 			name = Release;
 		};
 		BEC09A62E69C3553534FF35E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Richard Gustavsen (6946YJH46R)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -482,6 +499,7 @@
 					"\"$(SRCROOT)/../../qt-shadowbuilds/qt-base-ios-device/lib\"",
 				);
 				PRODUCT_NAME = openfly;
+				PROVISIONING_PROFILE = "3E750376-8691-4283-A06D-21ACB6319884";
 			};
 			name = Debug;
 		};
