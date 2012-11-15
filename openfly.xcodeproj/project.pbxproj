@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25CFE02D0BC3E9DD39D909FB /* CoreGraphics.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 4766F0815A45C66CB97F791F /* CoreGraphics.framework */; };
+		337DE48237221E0BFE35EAB6 /* QtSql_debug in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 170D1D0104F57965EF5FDE0B /* QtSql_debug */; };
+		3B1F5974F6B2BBDCD4193B96 /* QtWidgets_debug in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 350A58B0753854606FDB524F /* QtWidgets_debug */; };
+		404FE74F9D53816A4C747D53 /* moc_flightsmodel.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 23507EC91B85084C3776D04A /* moc_flightsmodel.cpp */; settings = {ATTRIBUTES = (); }; };
+		44132618EB174D7C6CCBD22E /* QtScript_debug in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 949F85CE62A901B2CB1F614A /* QtScript_debug */; };
+		47FDDC94D3091913D73BB111 /* moc_flighttimes.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = DE784BD8FE71D2661E0CC55C /* moc_flighttimes.cpp */; settings = {ATTRIBUTES = (); }; };
+		4B4BF05C0FEFD0F4606EB533 /* flighttimes.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7A14D225C69E47BECD3792D5 /* flighttimes.cpp */; settings = {ATTRIBUTES = (); }; };
+		655638DFF55AE894AD187CA7 /* moc_airportnames.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = A9FE6B2A54DBE592CBC3603F /* moc_airportnames.cpp */; settings = {ATTRIBUTES = (); }; };
+		6641AD2D9C5AC1A190E6E2FB /* moc_xmldatasource.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 28B554928C479DF7CCE4320F /* moc_xmldatasource.cpp */; settings = {ATTRIBUTES = (); }; };
+		76FD4F043CA9E6BCB9129FA5 /* moc_flightstatuses.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F55BE6B8CCDC4D9282FFCAFD /* moc_flightstatuses.cpp */; settings = {ATTRIBUTES = (); }; };
+		797C6255164EA2880004624F /* OpenGLES.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 797C6254164EA2880004624F /* OpenGLES.framework */; };
+		797C6257164EA2900004624F /* QuartzCore.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 797C6256164EA2900004624F /* QuartzCore.framework */; };
+		797C6259164EA2EE0004624F /* libqios.a in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 797C6258164EA2EE0004624F /* libqios.a */; };
+		797C625B164EA3010004624F /* Foundation.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 797C625A164EA3010004624F /* Foundation.framework */; };
+		797C625D164EA9D20004624F /* libQtPlatformSupport.a in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 797C625C164EA9D20004624F /* libQtPlatformSupport.a */; };
+		797C625F164EB5380004624F /* Default-568h@2x.png in Bundle Resources */ = {isa = PBXBuildFile; fileRef = 797C625E164EB5380004624F /* Default-568h@2x.png */; };
+		79CA699216501CB50030CF97 /* libqiosmain.a in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 79CA699116501CB50030CF97 /* libqiosmain.a */; };
+		79CA699C16516B7C0030CF97 /* Info.plist in Bundle Resources */ = {isa = PBXBuildFile; fileRef = 79CA699B16516B7C0030CF97 /* Info.plist */; };
+		7CB330EA83AF1C6A1980F7F3 /* QtGui_debug in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 32EFFA4A94AD4DA7F8E33446 /* QtGui_debug */; };
+		8FE57FB4F2258217F5D940F9 /* flightstatuses.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7B1E15103925972CC6E19A15 /* flightstatuses.cpp */; settings = {ATTRIBUTES = (); }; };
+		90204DE536067AAD078A90DC /* QtCore_debug in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = DDA3DF2B266BFFAB636B9B3E /* QtCore_debug */; };
+		966CD00126B932EB54E737D1 /* QtDeclarative_debug in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = AF251D0D4E742A6489E32C68 /* QtDeclarative_debug */; };
+		9CB0A8ECEB71BB2030D34769 /* moc_settings.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 185FBC6310E35CB6C4F8D35F /* moc_settings.cpp */; settings = {ATTRIBUTES = (); }; };
+		ACB9E77C9C95049A1A9CE9A6 /* airportnames.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = B37F66EFA33B442F85DBD3A1 /* airportnames.cpp */; settings = {ATTRIBUTES = (); }; };
+		B18E935B3D7E9A845363D933 /* receiver.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C56FAC0AC77B5BE8B343CD2F /* receiver.cpp */; settings = {ATTRIBUTES = (); }; };
+		B3BA92F700CBA4597A8D256A /* QtNetwork_debug in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 748704BE8BF9062915540423 /* QtNetwork_debug */; };
+		BF08F8A7D5386715807095B8 /* QuartzCore.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = ACA2ADFDECDBEA62C468C945 /* QuartzCore.framework */; };
+		CBD2187AD53790107C23760E /* flightsmodel.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 6BEE7AF3F9B8F9131DD6267E /* flightsmodel.cpp */; settings = {ATTRIBUTES = (); }; };
+		DD77281E5EBC9C879D2E78B8 /* settings.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 9393585829C5CF7660B96A11 /* settings.cpp */; settings = {ATTRIBUTES = (); }; };
+		DFF7F3E6DE202ECEB3DDB7A0 /* main.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 043D5E56180B609A46988410 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		E793569D9DB05FEC7DFE433A /* xmldatasource.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 0BC5E72460C95C7F9A8E1CCC /* xmldatasource.cpp */; settings = {ATTRIBUTES = (); }; };
+		ED02DAF12B9E4BA2EC465277 /* moc_receiver.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = A19C022492935A623162E436 /* moc_receiver.cpp */; settings = {ATTRIBUTES = (); }; };
+		F8C85E369BA61DF3FF7CCA91 /* qrc_fly.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F8A767A7140392BEF1478D4E /* qrc_fly.cpp */; settings = {ATTRIBUTES = (); }; };
+		FB4C557F6B609103986F96CE /* CoreText.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 90E107E9A8A8D898BB6CBC82 /* CoreText.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		043D5E56180B609A46988410 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		0BC5E72460C95C7F9A8E1CCC /* xmldatasource.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = xmldatasource.cpp; sourceTree = SOURCE_ROOT; };
+		120E4A4678F3EB69B0F0B171 /* fly.qrc */ = {isa = PBXFileReference; lastKnownFileType = file; name = fly.qrc; path = ../fly.qrc; sourceTree = SOURCE_ROOT; };
+		12B38BD4BCFB7C31331F9B11 /* flighttimes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = flighttimes.h; path = ../flighttimes.h; sourceTree = SOURCE_ROOT; };
+		170D1D0104F57965EF5FDE0B /* QtSql_debug */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = QtSql_debug; path = "../../qt-shadowbuilds/qt-base-ios-device/lib/libQtSql_debug.a"; sourceTree = SOURCE_ROOT; };
+		185FBC6310E35CB6C4F8D35F /* moc_settings.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_settings.cpp; sourceTree = SOURCE_ROOT; };
+		23507EC91B85084C3776D04A /* moc_flightsmodel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_flightsmodel.cpp; sourceTree = SOURCE_ROOT; };
+		28B554928C479DF7CCE4320F /* moc_xmldatasource.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_xmldatasource.cpp; sourceTree = SOURCE_ROOT; };
+		2B8F680362918D1330627A29 /* settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = settings.h; path = ../settings.h; sourceTree = SOURCE_ROOT; };
+		2B9F5257240B5626E8434A44 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		32D593FD2D4B771A35059459 /* node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = node.h; path = ../node.h; sourceTree = SOURCE_ROOT; };
+		32EFFA4A94AD4DA7F8E33446 /* QtGui_debug */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = QtGui_debug; path = "../../qt-shadowbuilds/qt-base-ios-device/lib/libQtGui_debug.a"; sourceTree = SOURCE_ROOT; };
+		350A58B0753854606FDB524F /* QtWidgets_debug */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = QtWidgets_debug; path = "../../qt-shadowbuilds/qt-base-ios-device/lib/libQtWidgets_debug.a"; sourceTree = SOURCE_ROOT; };
+		4766F0815A45C66CB97F791F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = /System/Library/Frameworks/CoreGraphics.framework; sourceTree = "<absolute>"; };
+		60EF245C130E8583D7F93F3C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+		64EF74911B240067BE4ABC68 /* OpenFly.pro */ = {isa = PBXFileReference; lastKnownFileType = text; path = OpenFly.pro; sourceTree = SOURCE_ROOT; };
+		6BEE7AF3F9B8F9131DD6267E /* flightsmodel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = flightsmodel.cpp; sourceTree = SOURCE_ROOT; };
+		748704BE8BF9062915540423 /* QtNetwork_debug */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = QtNetwork_debug; path = "../../qt-shadowbuilds/qt-base-ios-device/lib/libQtNetwork_debug.a"; sourceTree = SOURCE_ROOT; };
+		75EE56DB5E5FE9D4151A7893 /* xmldatasource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xmldatasource.h; path = ../xmldatasource.h; sourceTree = SOURCE_ROOT; };
+		797C6246164E9EDD0004624F /* openfly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openfly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		797C6254164EA2880004624F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		797C6256164EA2900004624F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		797C6258164EA2EE0004624F /* libqios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libqios.a; path = "Volumes/Code/qt-shadowbuilds/qt-base-ios-device/plugins/platforms/libqios.a"; sourceTree = "<group>"; };
+		797C625A164EA3010004624F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		797C625C164EA9D20004624F /* libQtPlatformSupport.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libQtPlatformSupport.a; path = "Volumes/Code/qt-shadowbuilds/qt-base-ios-device/lib/libQtPlatformSupport.a"; sourceTree = "<group>"; };
+		797C625E164EB5380004624F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		79CA699116501CB50030CF97 /* libqiosmain.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libqiosmain.a; path = "Volumes/Code/qt-shadowbuilds/qt-base-ios-device/plugins/platforms/libqiosmain.a"; sourceTree = "<group>"; };
+		79CA699B16516B7C0030CF97 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		7A14D225C69E47BECD3792D5 /* flighttimes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = flighttimes.cpp; sourceTree = SOURCE_ROOT; };
+		7B1E15103925972CC6E19A15 /* flightstatuses.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = flightstatuses.cpp; sourceTree = SOURCE_ROOT; };
+		7E0BF3B814FC264B4728C221 /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = constants.h; path = ../constants.h; sourceTree = SOURCE_ROOT; };
+		8412FE392B7A9828870B7D52 /* flightstatuses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = flightstatuses.h; path = ../flightstatuses.h; sourceTree = SOURCE_ROOT; };
+		90E107E9A8A8D898BB6CBC82 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = /System/Library/Frameworks/CoreText.framework; sourceTree = "<absolute>"; };
+		9393585829C5CF7660B96A11 /* settings.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = settings.cpp; sourceTree = SOURCE_ROOT; };
+		9491511836DC0AB497235238 /* airportnames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = airportnames.h; path = ../airportnames.h; sourceTree = SOURCE_ROOT; };
+		949F85CE62A901B2CB1F614A /* QtScript_debug */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = QtScript_debug; path = "../../qt-shadowbuilds/qt-base-ios-device/lib/libQtScript_debug.a"; sourceTree = SOURCE_ROOT; };
+		A19C022492935A623162E436 /* moc_receiver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_receiver.cpp; sourceTree = SOURCE_ROOT; };
+		A9FE6B2A54DBE592CBC3603F /* moc_airportnames.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_airportnames.cpp; sourceTree = SOURCE_ROOT; };
+		ACA2ADFDECDBEA62C468C945 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		AF251D0D4E742A6489E32C68 /* QtDeclarative_debug */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = QtDeclarative_debug; path = "../../qt-shadowbuilds/qt-base-ios-device/lib/libQtDeclarative_debug.a"; sourceTree = SOURCE_ROOT; };
+		B37F66EFA33B442F85DBD3A1 /* airportnames.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = airportnames.cpp; sourceTree = SOURCE_ROOT; };
+		BAA2B1F8CA5350963F010141 /* flightsmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = flightsmodel.h; path = ../flightsmodel.h; sourceTree = SOURCE_ROOT; };
+		C56FAC0AC77B5BE8B343CD2F /* receiver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = receiver.cpp; sourceTree = "<group>"; };
+		D0A1AADFEA73F78641C682A5 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		D81EA97234A419E7EBCC3448 /* receiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = receiver.h; path = ../receiver.h; sourceTree = SOURCE_ROOT; };
+		DDA3DF2B266BFFAB636B9B3E /* QtCore_debug */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = QtCore_debug; path = "../../qt-shadowbuilds/qt-base-ios-device/lib/libQtCore_debug.a"; sourceTree = SOURCE_ROOT; };
+		DE784BD8FE71D2661E0CC55C /* moc_flighttimes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_flighttimes.cpp; sourceTree = SOURCE_ROOT; };
+		E5F0053C062927C45241E2C9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		F55BE6B8CCDC4D9282FFCAFD /* moc_flightstatuses.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_flightstatuses.cpp; sourceTree = SOURCE_ROOT; };
+		F8A767A7140392BEF1478D4E /* qrc_fly.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = qrc_fly.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A1043669E6E5A7426EA502A /* Frameworks & Libraries */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797C6259164EA2EE0004624F /* libqios.a in Frameworks & Libraries */,
+				79CA699216501CB50030CF97 /* libqiosmain.a in Frameworks & Libraries */,
+				797C625D164EA9D20004624F /* libQtPlatformSupport.a in Frameworks & Libraries */,
+				797C625B164EA3010004624F /* Foundation.framework in Frameworks & Libraries */,
+				797C6257164EA2900004624F /* QuartzCore.framework in Frameworks & Libraries */,
+				797C6255164EA2880004624F /* OpenGLES.framework in Frameworks & Libraries */,
+				BF08F8A7D5386715807095B8 /* QuartzCore.framework in Frameworks & Libraries */,
+				FB4C557F6B609103986F96CE /* CoreText.framework in Frameworks & Libraries */,
+				25CFE02D0BC3E9DD39D909FB /* CoreGraphics.framework in Frameworks & Libraries */,
+				966CD00126B932EB54E737D1 /* QtDeclarative_debug in Frameworks & Libraries */,
+				337DE48237221E0BFE35EAB6 /* QtSql_debug in Frameworks & Libraries */,
+				3B1F5974F6B2BBDCD4193B96 /* QtWidgets_debug in Frameworks & Libraries */,
+				44132618EB174D7C6CCBD22E /* QtScript_debug in Frameworks & Libraries */,
+				B3BA92F700CBA4597A8D256A /* QtNetwork_debug in Frameworks & Libraries */,
+				7CB330EA83AF1C6A1980F7F3 /* QtGui_debug in Frameworks & Libraries */,
+				90204DE536067AAD078A90DC /* QtCore_debug in Frameworks & Libraries */,
+			);
+			name = "Frameworks & Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05596AB53D8D521C69802C27 /* openfly */ = {
+			isa = PBXGroup;
+			children = (
+				79CA699B16516B7C0030CF97 /* Info.plist */,
+				79CA699116501CB50030CF97 /* libqiosmain.a */,
+				797C625E164EB5380004624F /* Default-568h@2x.png */,
+				797C625C164EA9D20004624F /* libQtPlatformSupport.a */,
+				797C625A164EA3010004624F /* Foundation.framework */,
+				797C6258164EA2EE0004624F /* libqios.a */,
+				797C6256164EA2900004624F /* QuartzCore.framework */,
+				797C6254164EA2880004624F /* OpenGLES.framework */,
+				FB61758D0F0FDA4BA867C3D5 /* Sources */,
+				46E892BBB6BB6952967E0561 /* Temporary Sources */,
+				883D7615C4D2DE3FA1218F12 /* Headers */,
+				7CABE3C80E79AD2B307756D2 /* Sources [qmake] */,
+				52C235EBF1C9B07808119459 /* Sources [RCC] */,
+				DD3C674B0E9509B84DF40A16 /* Sources [MOC] */,
+				ED1E82605DD74B483AF3C982 /* External Frameworks and Libraries */,
+				797C6247164E9EDD0004624F /* Products */,
+			);
+			name = openfly;
+			sourceTree = "<Group>";
+		};
+		4458B98565818D7E2682FA2D /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				32D593FD2D4B771A35059459 /* node.h */,
+				D81EA97234A419E7EBCC3448 /* receiver.h */,
+				75EE56DB5E5FE9D4151A7893 /* xmldatasource.h */,
+				9491511836DC0AB497235238 /* airportnames.h */,
+				8412FE392B7A9828870B7D52 /* flightstatuses.h */,
+				12B38BD4BCFB7C31331F9B11 /* flighttimes.h */,
+				BAA2B1F8CA5350963F010141 /* flightsmodel.h */,
+				2B8F680362918D1330627A29 /* settings.h */,
+				7E0BF3B814FC264B4728C221 /* constants.h */,
+			);
+			name = ..;
+			sourceTree = "<Group>";
+		};
+		46E892BBB6BB6952967E0561 /* Temporary Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F8A767A7140392BEF1478D4E /* qrc_fly.cpp */,
+				A19C022492935A623162E436 /* moc_receiver.cpp */,
+				28B554928C479DF7CCE4320F /* moc_xmldatasource.cpp */,
+				A9FE6B2A54DBE592CBC3603F /* moc_airportnames.cpp */,
+				F55BE6B8CCDC4D9282FFCAFD /* moc_flightstatuses.cpp */,
+				DE784BD8FE71D2661E0CC55C /* moc_flighttimes.cpp */,
+				23507EC91B85084C3776D04A /* moc_flightsmodel.cpp */,
+				185FBC6310E35CB6C4F8D35F /* moc_settings.cpp */,
+			);
+			name = "Temporary Sources";
+			path = /Volumes/Code/public/OpenFly;
+			sourceTree = "<absolute>";
+		};
+		52C235EBF1C9B07808119459 /* Sources [RCC] */ = {
+			isa = PBXGroup;
+			children = (
+				64A825BB1933BF027E198B1D /* .. */,
+			);
+			name = "Sources [RCC]";
+			path = /Volumes/Code/public/OpenFly;
+			sourceTree = "<absolute>";
+		};
+		64A825BB1933BF027E198B1D /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				120E4A4678F3EB69B0F0B171 /* fly.qrc */,
+			);
+			name = ..;
+			sourceTree = "<Group>";
+		};
+		797C6247164E9EDD0004624F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				797C6246164E9EDD0004624F /* openfly.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CABE3C80E79AD2B307756D2 /* Sources [qmake] */ = {
+			isa = PBXGroup;
+			children = (
+				64EF74911B240067BE4ABC68 /* OpenFly.pro */,
+			);
+			name = "Sources [qmake]";
+			path = /Volumes/Code/public/OpenFly;
+			sourceTree = "<absolute>";
+		};
+		883D7615C4D2DE3FA1218F12 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				4458B98565818D7E2682FA2D /* .. */,
+			);
+			name = Headers;
+			path = /Volumes/Code/public/OpenFly;
+			sourceTree = "<absolute>";
+		};
+		AF132DD6D01A4F3579E3EA7A /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				D81EA97234A419E7EBCC3448 /* receiver.h */,
+				75EE56DB5E5FE9D4151A7893 /* xmldatasource.h */,
+				9491511836DC0AB497235238 /* airportnames.h */,
+				8412FE392B7A9828870B7D52 /* flightstatuses.h */,
+				12B38BD4BCFB7C31331F9B11 /* flighttimes.h */,
+				BAA2B1F8CA5350963F010141 /* flightsmodel.h */,
+				2B8F680362918D1330627A29 /* settings.h */,
+			);
+			name = ..;
+			sourceTree = "<Group>";
+		};
+		BFA3A29D17FD123C907B6E35 /* testsource */ = {
+			isa = PBXGroup;
+			children = (
+				C56FAC0AC77B5BE8B343CD2F /* receiver.cpp */,
+				0BC5E72460C95C7F9A8E1CCC /* xmldatasource.cpp */,
+				B37F66EFA33B442F85DBD3A1 /* airportnames.cpp */,
+				7B1E15103925972CC6E19A15 /* flightstatuses.cpp */,
+				7A14D225C69E47BECD3792D5 /* flighttimes.cpp */,
+				6BEE7AF3F9B8F9131DD6267E /* flightsmodel.cpp */,
+				9393585829C5CF7660B96A11 /* settings.cpp */,
+				043D5E56180B609A46988410 /* main.cpp */,
+			);
+			name = testsource;
+			path = /Volumes/Code/public/OpenFly;
+			sourceTree = "<absolute>";
+		};
+		DD3C674B0E9509B84DF40A16 /* Sources [MOC] */ = {
+			isa = PBXGroup;
+			children = (
+				4458B98565818D7E2682FA2D /* .. */,
+				AF132DD6D01A4F3579E3EA7A /* .. */,
+			);
+			name = "Sources [MOC]";
+			path = /Volumes/Code/public/OpenFly;
+			sourceTree = "<absolute>";
+		};
+		ED1E82605DD74B483AF3C982 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				ACA2ADFDECDBEA62C468C945 /* QuartzCore.framework */,
+				90E107E9A8A8D898BB6CBC82 /* CoreText.framework */,
+				4766F0815A45C66CB97F791F /* CoreGraphics.framework */,
+				AF251D0D4E742A6489E32C68 /* QtDeclarative_debug */,
+				2B9F5257240B5626E8434A44 /* CoreFoundation.framework */,
+				E5F0053C062927C45241E2C9 /* Security.framework */,
+				60EF245C130E8583D7F93F3C /* SystemConfiguration.framework */,
+				D0A1AADFEA73F78641C682A5 /* CoreServices.framework */,
+				170D1D0104F57965EF5FDE0B /* QtSql_debug */,
+				350A58B0753854606FDB524F /* QtWidgets_debug */,
+				949F85CE62A901B2CB1F614A /* QtScript_debug */,
+				748704BE8BF9062915540423 /* QtNetwork_debug */,
+				32EFFA4A94AD4DA7F8E33446 /* QtGui_debug */,
+				DDA3DF2B266BFFAB636B9B3E /* QtCore_debug */,
+			);
+			name = "External Frameworks and Libraries";
+			path = /Volumes/Code/public/OpenFly;
+			sourceTree = "<absolute>";
+		};
+		FB61758D0F0FDA4BA867C3D5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BFA3A29D17FD123C907B6E35 /* testsource */,
+			);
+			name = Sources;
+			sourceTree = "<Group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B716D93989CDA7EBCBC37991 /* aro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17B3380A4D6A7D415E7F2E1E /* Build configuration list for PBXNativeTarget "aro" */;
+			buildPhases = (
+				C29B8785722055ED95EF7B57 /* Build Sources */,
+				2A1043669E6E5A7426EA502A /* Frameworks & Libraries */,
+				3787F99312C85FF0073FD7BA /* Bundle Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = aro;
+			productName = openfly;
+			productReference = 797C6246164E9EDD0004624F /* openfly.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91B15E841AA80083484172DE /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = CC82A9286117DFED018F418F /* Build configuration list for PBXProject "openfly" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 05596AB53D8D521C69802C27 /* openfly */;
+			productRefGroup = 797C6247164E9EDD0004624F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B716D93989CDA7EBCBC37991 /* aro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3787F99312C85FF0073FD7BA /* Bundle Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797C625F164EB5380004624F /* Default-568h@2x.png in Bundle Resources */,
+				79CA699C16516B7C0030CF97 /* Info.plist in Bundle Resources */,
+			);
+			name = "Bundle Resources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C29B8785722055ED95EF7B57 /* Build Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18E935B3D7E9A845363D933 /* receiver.cpp in Build Sources */,
+				E793569D9DB05FEC7DFE433A /* xmldatasource.cpp in Build Sources */,
+				ACB9E77C9C95049A1A9CE9A6 /* airportnames.cpp in Build Sources */,
+				8FE57FB4F2258217F5D940F9 /* flightstatuses.cpp in Build Sources */,
+				4B4BF05C0FEFD0F4606EB533 /* flighttimes.cpp in Build Sources */,
+				CBD2187AD53790107C23760E /* flightsmodel.cpp in Build Sources */,
+				DD77281E5EBC9C879D2E78B8 /* settings.cpp in Build Sources */,
+				DFF7F3E6DE202ECEB3DDB7A0 /* main.cpp in Build Sources */,
+				F8C85E369BA61DF3FF7CCA91 /* qrc_fly.cpp in Build Sources */,
+				ED02DAF12B9E4BA2EC465277 /* moc_receiver.cpp in Build Sources */,
+				6641AD2D9C5AC1A190E6E2FB /* moc_xmldatasource.cpp in Build Sources */,
+				655638DFF55AE894AD187CA7 /* moc_airportnames.cpp in Build Sources */,
+				76FD4F043CA9E6BCB9129FA5 /* moc_flightstatuses.cpp in Build Sources */,
+				47FDDC94D3091913D73BB111 /* moc_flighttimes.cpp in Build Sources */,
+				404FE74F9D53816A4C747D53 /* moc_flightsmodel.cpp in Build Sources */,
+				9CB0A8ECEB71BB2030D34769 /* moc_settings.cpp in Build Sources */,
+			);
+			name = "Build Sources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4B72B24813252891014BCF61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Richard Gustavsen (6946YJH46R)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					../OpenFly,
+					"../../qt-shadowbuilds/qt-base-ios-device/include",
+					"../../qt-shadowbuilds/qt-base-ios-device/include/QtDeclarative",
+					"../../qt-shadowbuilds/qt-base-ios-device/include/QtWidgets",
+					"../../qt-shadowbuilds/qt-base-ios-device/include/QtScript",
+					"../../qt-shadowbuilds/qt-base-ios-device/include/QtNetwork",
+					"../../qt-shadowbuilds/qt-base-ios-device/include/QtGui",
+					"../../qt-shadowbuilds/qt-base-ios-device/include/QtCore",
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					.,
+					"../../qt-src/qt-base-ios/mkspecs/macx-xcode",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					/System/Library/Frameworks/,
+					"/Volumes/Code/qt-shadowbuilds/qt-base-ios-device/lib",
+				);
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-gdwarf-2",
+					"-Wall",
+					"-W",
+					"-fPIE",
+					"-DTARGET=\"openfly\"",
+					"-DVERSION=\"1.0.0\"",
+					"-DQT_DECLARATIVE_LIB",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_SCRIPT_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-gdwarf-2",
+					"-Wall",
+					"-W",
+					"-fPIE",
+					"-DTARGET=\"openfly\"",
+					"-DVERSION=\"1.0.0\"",
+					"-DQT_DECLARATIVE_LIB",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_SCRIPT_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-all_load",
+					"-framework",
+					OpenGLES,
+					"-framework",
+					UIKit,
+					"-L/Volumes/Code/qt-shadowbuilds/qt-base-ios-device/lib",
+					"-lz",
+					"-lm",
+				);
+				PRODUCT_NAME = openfly;
+				PROVISIONING_PROFILE = "3E750376-8691-4283-A06D-21ACB6319884";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = armv7;
+			};
+			name = Debug;
+		};
+		8C7174830A1E4DCBA0332EC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../qt-shadowbuilds/qt-base-ios-device/plugins/platforms\"",
+					"\"$(SRCROOT)/../../qt-shadowbuilds/qt-base-ios-device/lib\"",
+				);
+				PRODUCT_NAME = openfly;
+			};
+			name = Release;
+		};
+		BEC09A62E69C3553534FF35E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../qt-shadowbuilds/qt-base-ios-device/plugins/platforms\"",
+					"\"$(SRCROOT)/../../qt-shadowbuilds/qt-base-ios-device/lib\"",
+				);
+				PRODUCT_NAME = openfly;
+			};
+			name = Debug;
+		};
+		D70590BEB531B51029F711BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Richard Gustavsen (6946YJH46R)";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				HEADER_SEARCH_PATHS = (
+					../OpenFly,
+					"../../qt-shadowbuilds/qt-base-ios-device/include",
+					"../../qt-shadowbuilds/qt-base-ios-device/include/QtDeclarative",
+					"../../qt-shadowbuilds/qt-base-ios-device/include/QtWidgets",
+					"../../qt-shadowbuilds/qt-base-ios-device/include/QtScript",
+					"../../qt-shadowbuilds/qt-base-ios-device/include/QtNetwork",
+					"../../qt-shadowbuilds/qt-base-ios-device/include/QtGui",
+					"../../qt-shadowbuilds/qt-base-ios-device/include/QtCore",
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					.,
+					"../../qt-src/qt-base-ios/mkspecs/macx-xcode",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					/System/Library/Frameworks/,
+					"/Volumes/Code/qt-shadowbuilds/qt-base-ios-device/lib",
+				);
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-gdwarf-2",
+					"-Wall",
+					"-W",
+					"-fPIE",
+					"-DTARGET=\"openfly\"",
+					"-DVERSION=\"1.0.0\"",
+					"-DQT_DECLARATIVE_LIB",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_SCRIPT_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-gdwarf-2",
+					"-Wall",
+					"-W",
+					"-fPIE",
+					"-DTARGET=\"openfly\"",
+					"-DVERSION=\"1.0.0\"",
+					"-DQT_DECLARATIVE_LIB",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_SCRIPT_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-all_load",
+					"-framework",
+					OpenGLES,
+					"-framework",
+					UIKit,
+					"-L/Volumes/Code/qt-shadowbuilds/qt-base-ios-device/lib",
+					"-lz",
+					"-lm",
+				);
+				PRODUCT_NAME = openfly;
+				PROVISIONING_PROFILE = "3E750376-8691-4283-A06D-21ACB6319884";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = armv7;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17B3380A4D6A7D415E7F2E1E /* Build configuration list for PBXNativeTarget "aro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEC09A62E69C3553534FF35E /* Debug */,
+				8C7174830A1E4DCBA0332EC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC82A9286117DFED018F418F /* Build configuration list for PBXProject "openfly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B72B24813252891014BCF61 /* Debug */,
+				D70590BEB531B51029F711BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91B15E841AA80083484172DE /* Project object */;
+}

@@ -21,7 +21,7 @@
 
 #include "receiver.h"
 #include <QNetworkRequest>
-#include <QMutexLocker>
+//#include <QMutexLocker>
 
 Q_GLOBAL_STATIC(RequestQueueThread, _requestQueueThread)
 
@@ -170,7 +170,7 @@ void RequestQueue::authenticationRequired(QNetworkReply *reply, QAuthenticator *
 
 // RequestQueueThread
 
-QMutex RequestQueueThread::m_mutex;
+//QMutex RequestQueueThread::m_mutex;
 QWaitCondition RequestQueueThread::m_condition;
 bool RequestQueueThread::m_connected = false;
 bool RequestQueueThread::m_threaded = true;
@@ -193,9 +193,9 @@ RequestQueueThread *RequestQueueThread::instance()
     if (m_threaded) {
         if (!queueThread->isRunning())
             queueThread->start();
-        QMutexLocker locker(&m_mutex);
-        while (!m_connected)
-            m_condition.wait(&m_mutex);
+        //QMutexLocker locker(&m_mutex);
+        //while (!m_connected)
+        //    m_condition.wait(&m_mutex);
     } else { // unthreaded
         if (!m_queue) {
             m_queue = new RequestQueue(queueThread);
@@ -282,10 +282,10 @@ void RequestQueueThread::run()
 
     // start eventloop for this thread
 
-    m_mutex.lock();
+    //m_mutex.lock();
     m_connected = true;
     m_condition.wakeAll();
-    m_mutex.unlock();
+    //m_mutex.unlock();
 
     exec();
 }

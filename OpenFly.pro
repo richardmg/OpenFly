@@ -10,6 +10,8 @@ VERSION = 1.0.0
 
 DEFINES += TARGET="\"$$TARGET\"" VERSION="\"$$VERSION\""
 
+LIBS += -framework QuartzCore -framework OpenGLES -framework UIKit -framework CoreText -framework CoreGraphics
+
 # Input
 HEADERS +=  \
             node.h \

@@ -22,6 +22,7 @@
 #ifndef RECEIVER_H
 #define RECEIVER_H
 
+//#include <QtCore/qmutex.h>
 #include <QtCore>
 #include <QtNetwork>
 #include <QtGui>
@@ -117,7 +118,7 @@ protected:
     void connectToQueue(RequestQueue *queue);
 
 private:
-    static QMutex m_mutex;
+    //static QMutex m_mutex;
     static QWaitCondition m_condition;
     static bool m_connected;
     static bool m_threaded;
